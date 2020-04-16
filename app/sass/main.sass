@@ -1,0 +1,610 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+  background: #fff
+
+html, body
+  overflow-x: hidden
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  outline: none
+  transition: .3s ease
+
+  &:hover
+    text-decoration: none
+
+.color-accent
+  color: #1AA3E0
+
+button, .btn
+  outline: none
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  border: none
+    radius: 0
+
+.btn-blue
+  border-radius: 8px
+  width: 91px
+  height: 32px
+
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
+  border-radius: 8px
+  margin-left: 0
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 14px
+  font-weight: bold
+  color: #fff
+  &:hover
+    box-shadow: 0px 10px 20px rgba(26, 163, 224, 0.3)
+    color: #fff
+
+
+.btn-disable
+  background: #1AA3E0
+  opacity: .5
+
+.links
+  color: #1AA3E0
+  opacity: .5
+  font-size: 14px
+  font-weight: bold
+
+.btn-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+  .btn
+    margin: 0
+    flex: none
+  .links
+    margin: 0 24px 0 0
+
+
+h1
+  width: 100%
+  color: #2F3545
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 25px
+
+input, textarea, .form-control
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  width: 100%
+  font-family: $default-font
+  font-size: 12px
+  font-weight: 500
+  color: #424B62
+  padding: 0 10px
+  border: 1px solid rgba(#424B62, .15)
+    radius: 4px
+  &::placeholder
+    color: #424B62
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.form-control:disabled, .form-control[readonly]
+  background: rgba(#9B9EA8, .15)
+  border: none
+  color: rgba(#424B62, .7)
+  &::placeholder
+    color: rgba(#424B62, .7)
+
+.fill-none
+  fill: none
+
+//header
+.logo
+  display: flex
+  align-items: center
+
+.logo-icon
+  width: 40px
+  min-width: 40px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: linear-gradient(135deg, #15B9FF 17.5%, rgba(21, 185, 255, 0) 83.75%)
+  padding: 8px 3px
+
+.logo-text
+  width: 141px
+  height: 13px
+  margin: 0 0 0 12px
+
+svg
+  display: inline-block
+
+.header-item
+  margin: 0 32px 0 0
+  display: flex
+  align-items: center
+  font-size: 14px
+  color: #9B9EA8
+  font-weight: 500
+
+  &__icon
+    margin: 0 10px 0 0
+    fill: none
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &:last-child
+    margin: 0
+
+  &:hover
+    color: #fff
+
+.wallet-box
+  font-weight: 600
+
+header
+  padding: 12px 0
+  width: 100%
+  background: #2F3545
+
+//footer
+footer
+  background: #424B62
+  padding: 16px 0
+  color: rgba(#fff, .7)
+  font-size: 12px
+
+.document
+  max-width: 320px
+  line-height: 140%
+
+.list-social
+  display: flex
+  align-items: center
+  margin: 0 0 0 59px
+
+  li
+    margin: 0 7px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      width: 32px
+      height: 32px
+      display: flex
+      align-items: center
+      justify-content: center
+
+.nav
+  padding: 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.nav-item
+  margin: 0 26px 0 0
+
+  &:last-child
+    margin: 0
+
+.nav-link
+  color: #9B9EA8
+  font-size: 13px
+  padding: 0
+  font-weight: 600
+
+  &:hover
+    color: #fff
+
+.nav-link.active
+  color: #fff
+
+
+.body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.wrapper
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+
+//wrapper
+.wrapper
+  height: 100%
+  display: flex
+
+  .row
+    height: 100%
+
+.main-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  height: 100%
+  min-height: 100%
+
+
+.content
+  width: calc(100% - 96px)
+
+
+//sidebar
+.sidebar
+  width: 96px
+  background: #424B62
+  height: 100%
+  overflow-y: auto
+
+.menu
+  width: 100%
+
+  li
+    width: 100%
+    height: 96px
+    margin: 0
+
+.nav-links
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  height: 100%
+  flex-direction: column
+  padding: 23px 0 13px
+  color: #9B9EA8
+  font-size: 12px
+  font-weight: 600
+  &:hover
+    background: #1AA3E0
+    color: #fff
+    .nav-links__icon
+      path
+        stroke: #fff
+
+.nav-links.active
+  background: #1AA3E0
+  color: #fff
+  .nav-links__icon
+    path
+      stroke: #fff !important
+
+
+.nav-links__icon
+  fill: none
+  transition: .3s ease
+  margin: 0 auto 20px
+  width: 24px
+  height: 24px
+
+
+//content
+.content
+  background: #fff
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.content-wrap
+  width: 100%
+  padding: 25px 24px 25px 32px
+  flex: 1 0 auto
+
+.content-line
+  width: 100%
+  border-top: 1px solid rgba(#9B9EA8, .3)
+  padding: 24px 32px
+  flex: 0 0 auto
+
+.settings-box
+  margin: 0 0 39px
+  &:last-child
+    margin: 0
+
+.settings-box__title
+  display: flex
+  align-items: center
+  margin: 0 0 20px
+  color: #424B62
+  font-size: 18px
+  font-weight: 500
+  line-height: 22px
+
+.settings-box__icon
+  width: 20px
+  height: 20px
+  margin: 0 12px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form
+  padding: 0 0 0 32px
+  max-width: 376px
+  width: 100%
+  .form-group
+    position: relative
+    label
+      width: 100%
+      margin: 0 0 8px
+      color: #2F3545
+      font-size: 12px
+      font-weight: 600
+    input
+      padding: 0 24px 0 10px
+  .form-group__disable
+    label
+      color: #9B9EA8
+
+.list-radio
+  width: 100%
+  li
+    width: 100%
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+.form-radio__title
+  margin: 0 0 10px
+
+.form-control__icon
+  position: absolute
+  right: 8px
+  bottom: 10px
+  width: 16px
+  height: 16px
+  svg
+    width: 100%
+    height: 100%
+
+
+.radio
+  width: 100%
+  position: relative
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  .radio-inp
+    display: none
+  .radio-custom
+    position: relative
+    width: 14px
+    min-width: 14px
+    height: 14px
+    border: 1px solid #424B62
+      radius: 50%
+    margin: 0 10px 0 0
+    cursor: pointer
+    transition: .3s ease
+    background: #fff
+  .label
+    color: #424B62
+    font-size: 12px
+    font-weight: 500
+    font-family: $default-font
+  .radio-inp:checked + .radio-custom
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      border-radius: 50%
+      width: 8px
+      height: 8px
+      background: #1AA3E0
+      display: block
+
+.checkbox
+  width: 100%
+  position: relative
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 14px
+    min-width: 14px
+    height: 14px
+    border: 1px solid #424B62
+      radius: 1px
+    margin: 0 10px 0 0
+    cursor: pointer
+    transition: .3s ease
+    background: #fff
+  .label
+    color: #424B62
+    font-size: 12px
+    font-weight: 500
+    font-family: $default-font
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      border-radius: 50%
+      width: 10px
+      height: 8px
+      background: url("../img/check.svg") no-repeat center
+        size: contain
+      display: block
+
+.radio-text
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .description
+    color: #424B62
+    font-size: 10px
+    margin: 5px 0 0 0
+    font-weight: normal
+
+textarea.form-control
+  width: 100%
+  height: 32px
+
+
+.btn-burger
+  display: none
+  width: 16px
+
+  span
+    width: 100%
+    height: 2px
+    display: block
+    background: #9B9EA8
+    margin: 0 0 3px
+    &:last-child
+      margin: 0
+
+.mobile-menu
+  position: fixed
+  display: none
+  left: 0
+  top: 0
+  z-index: 11
+  width: 280px
+  background: #2F3545
+  height: 100%
+  overflow-y: auto
+  padding: 30px 20px
+  .header-item
+    display: flex
+    margin: 0 0 40px
+    font-size: 12px
+
+.btn-close
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px auto
+  width: 20px
+  height: 20px
+  position: relative
+  cursor: pointer
+
+  &:hover
+    &:before, &:after
+      background: #fff
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1px
+    height: 100%
+    background: #9B9EA8
+    transition: .3s ease
+    top: 0
+  &:before
+    left: 9px
+    transform: rotate(135deg)
+  &:after
+    right: 10px
+    transform: rotate(40deg)
+
+
+
+
+@import "media"
+// Всегда в конце
