@@ -3,11 +3,12 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px)
-  /**/
+@media only screen and (max-width: 1540px)
+  .sorting-box
+    margin: 0 0 10px
 
 
-/* Medium Devices, Desktops */
+
 @media only screen and (max-width: 991px)
   .sidebar
     width: 85px
@@ -36,6 +37,12 @@
       a
         width: 30px
         height: 30px
+
+  .promotional-page .content
+    width: calc(100% - 85px - 230px)
+
+  .submenu-wrapper
+    width: 230px
 
 
 /* Extra Small Devices, Phones */
@@ -90,6 +97,123 @@
   .content-wrap
     padding: 30px 16px 0
 
+  .submenu-wrapper
+    width: 100%
+    height: auto
+    position: relative
+    overflow: visible
+    padding: 17px 16px 18px
+    h3
+      display: none
+
+  .promotional-page .content
+    width: 100%
+
+  .submenu-title
+    margin: 0
+    color: #8890A7
+    font-size: 11px
+    &:before
+      display: none
+
+  .submenu
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .submenu-dropDown
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    margin: 0
+    background: #fff
+    z-index: 2
+    overflow-x: auto
+    padding: 20px 16px
+    flex-wrap: nowrap
+    li
+      width: auto
+      margin: 0 16px 0 0
+      &:last-child
+        margin: 0 16px 0 0
+      a
+        color: #1AA3E0
+        justify-content: flex-start
+        white-space: nowrap
+        border-bottom: 1px dotted #1AA3E0
+        span
+          position: relative
+          margin: 0 0 0 3px
+          &:before
+            content: '('
+          &:after
+            content: ')'
+        &:hover, &:focus
+          color: #424B62
+          border: none
+
+  .submenu-title.open
+    color: #fff
+
+  .table
+    font-size: 12px
+    thead
+      font-size: 10px
+      th
+        padding: 6px 16px
+    td
+      padding: 4px 16px
+    .date-td
+      padding: 4px 17px
+    tfoot
+      td
+        white-space: nowrap
+        &:first-child
+          padding: 4px 17px
+
+  .payouts-wrap
+    padding: 0
+
+  .table-sorting
+    justify-content: flex-start
+
+  .sorting-wrapper
+    padding: 16px 17px
+    .btn-accent
+      display: none
+
+  .sorting-box
+    margin: 0
+    padding: 0
+    width: auto
+    border: none
+      radius: 0
+    &__content
+      display: none
+    &__title
+      position: relative
+      top: 0
+      padding: 0
+      left: 0
+      font-size: 11px
+    &__val
+      display: block
+
+  .table-it__icon
+    display: none
+
+  .table-it
+    img
+      display: none
+
+  .statistics-page
+    .table
+      .table-it, .date-td
+        white-space: nowrap
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 575px)
@@ -113,6 +237,24 @@
   .settings-page
     h1
       display: none
+
+  .content-wrap__promotional
+    padding: 50px 16px 0
+    .row
+      overflow-y: auto
+      max-height: 733px
+
+
+
+
+@media only screen and (max-width: 400px)
+  .attention-block
+    flex-wrap: wrap
+    p
+      width: 100%
+      padding: 0
+      order: 1
+      margin: 10px 0 0 0
 
 
 

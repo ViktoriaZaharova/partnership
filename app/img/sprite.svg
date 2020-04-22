@@ -150,5 +150,62 @@
         </g>
     </symbol>
 
+    <symbol id="error" viewBox="0 0 24 23">
+        <g>
 
+            <path d="M2 22L12 3L22 22H2Z" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square"/>
+            <path d="M12 11V15" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+            <path d="M12.5 18C12.5 18.2761 12.2761 18.5 12 18.5C11.7239 18.5 11.5 18.2761 11.5 18C11.5 17.7239 11.7239 17.5 12 17.5C12.2761 17.5 12.5 17.7239 12.5 18Z"
+                  fill="#444444" stroke="white"/>
+
+        </g>
+    </symbol>
+
+    <symbol id="success" viewBox="0 0 24 20">
+        <g>
+
+            <path d="M9 18L2 11L5 8L9 12L19 2L22 5L9 18Z" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square"/>
+
+        </g>
+    </symbol>
+
+    <symbol id="attention" viewBox="0 0 24 24">
+        <g>
+            <path d="M9.336 14L11.855 20.252C12.0524 20.7437 12.0466 21.2937 11.8389 21.7812C11.6311 22.2687 11.2384 22.6538 10.747 22.852V22.852C10.2553 23.0494 9.70526 23.0436 9.21778 22.8359C8.7303 22.6281 8.34518 22.2354 8.147 21.744L5 14"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+            <path d="M11 6H5C3.93913 6 2.92172 6.42143 2.17157 7.17157C1.42143 7.92172 1 8.93913 1 10C1 11.0609 1.42143 12.0783 2.17157 12.8284C2.92172 13.5786 3.93913 14 5 14H11L19 18V2L11 6Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+            <path d="M21 7V13C21.7956 13 22.5587 12.6839 23.1213 12.1213C23.6839 11.5587 24 10.7956 24 10C24 9.20435 23.6839 8.44129 23.1213 7.87868C22.5587 7.31607 21.7956 7 21 7Z"
+                  fill="white"/>
+
+        </g>
+    </symbol>
+
+    <symbol id="copy" viewBox="0 0 22 22">
+        <g>
+            <path d="M15 7H21V21H7V15" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square"/>
+            <path d="M15 1H1V15H15V1Z" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square"/>
+
+        </g>
+    </symbol>
+
+    <symbol id="statistic" viewBox="0 0 16 16">
+        <g>
+                <path d="M14 15H2C1.448 15 1 14.552 1 14V2C1 1.448 1.448 1 2 1H14C14.552 1 15 1.448 15 2V14C15 14.552 14.552 15 14 15Z" stroke="#15B9FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 8.5H5L6.5 5L9.5 12L11 8.5H13" stroke="#15B9FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+        </g>
+    </symbol>
+
+    <symbol id="statistic2" viewBox="0 0 16 16">
+        <g>
+                <path d="M14 15H2C1.448 15 1 14.552 1 14V2C1 1.448 1.448 1 2 1H14C14.552 1 15 1.448 15 2V14C15 14.552 14.552 15 14 15Z" stroke="#6D7792" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 8.5H5L6.5 5L9.5 12L11 8.5H13" stroke="#6D7792" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+        </g>
+    </symbol>
 </svg>
