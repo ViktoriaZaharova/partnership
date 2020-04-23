@@ -53,18 +53,23 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 767px)
+  header
+    padding: 9px 0
+
   .sidebar
     width: 100%
     order: 1
     height: auto
 
+
   .content
     width: 100%
-    height: auto
+    height: calc(100vh - 56px - 58px)
     min-height: auto
+    overflow-y: auto
 
-  header
-    padding: 9px 0
+  .promotional-page .content
+    height: calc(100vh - 56px - 58px - 49px)
 
 
   .mail-user, .language-box, .support-box, footer
@@ -268,7 +273,11 @@
       overflow-y: auto
       max-height: 733px
 
+  .content
+    height: calc(100vh - 48px - 58px)
 
+  .promotional-page .content
+    //height: 100%
 
 
 @media only screen and (max-width: 400px)

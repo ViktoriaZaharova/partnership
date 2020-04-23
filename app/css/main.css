@@ -708,15 +708,32 @@ textarea.form-control {
   background: #2F3545;
   height: auto;
   overflow-y: auto;
-  padding: 19px 24px 32px; }
+  overflow-x: hidden;
+  padding: 19px 24px 0; }
   .mobile-menu .header-item, .sorting-mobile .header-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 0 24px;
+    margin: 0 0 21px;
     font-size: 12px; }
     .mobile-menu .header-item:last-child, .sorting-mobile .header-item:last-child {
       margin: 0; }
+  .mobile-menu .dropDown-menu, .sorting-mobile .dropDown-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 18px 0 27px; }
+    .mobile-menu .dropDown-menu:before, .sorting-mobile .dropDown-menu:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      top: 0;
+      width: calc(100% + 50px);
+      height: 100%;
+      background: #232834; }
 
 .line-title__menu {
   width: 100%;
@@ -1383,7 +1400,10 @@ textarea.form-control {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    margin: 44px 0 0 0; }
+    .form-sing .bottom-line .header-item {
+      margin: 0; }
   .form-sing .checkbox {
     margin: 0; }
     .form-sing .checkbox .label {
@@ -1515,8 +1535,8 @@ textarea.form-control {
     .slick-dots li button {
       display: none; }
   .slick-dots li.slick-active {
-    -webkit-box-shadow: 0px 5px 10px rgba(26, 163, 224, 0.5);
-            box-shadow: 0px 5px 10px rgba(26, 163, 224, 0.5);
+    -webkit-box-shadow: 0 5px 10px rgba(26, 163, 224, 0.5);
+            box-shadow: 0 5px 10px rgba(26, 163, 224, 0.5);
     background: #1AA3E0;
     border: none; }
 
@@ -1562,6 +1582,66 @@ textarea.form-control {
     background: url("../img/prev.svg") no-repeat center;
       background-size: contain; }
 
+.dropItem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.dropDown-menu {
+  position: absolute;
+  display: none;
+  left: -20px;
+  background: #2F3545;
+  padding: 16px 63px 28px 22px;
+  z-index: 2;
+  top: 52px;
+  min-width: 100%; }
+  .dropDown-menu a {
+    margin: 0 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #9B9EA8;
+    font-size: 14px;
+    font-weight: 500; }
+    .dropDown-menu a:hover {
+      color: #fff; }
+    .dropDown-menu a:last-child {
+      margin: 0; }
+
+.mail-user {
+  margin: 0; }
+
+.dropDown-menu__cabinet {
+  min-width: 313px;
+  left: auto;
+  right: -15px; }
+
+.form .form-group .form-group__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .form .form-group .form-group__line input {
+    padding: 0 10px; }
+  .form .form-group .form-group__line .radio {
+    width: auto;
+    margin: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1540px) {
@@ -1600,6 +1680,8 @@ textarea.form-control {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 767px) {
+  header {
+    padding: 9px 0; }
   .sidebar {
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -1608,10 +1690,11 @@ textarea.form-control {
     height: auto; }
   .content {
     width: 100%;
-    height: auto;
-    min-height: auto; }
-  header {
-    padding: 9px 0; }
+    height: calc(100vh - 56px - 58px);
+    min-height: auto;
+    overflow-y: auto; }
+  .promotional-page .content {
+    height: calc(100vh - 56px - 58px - 49px); }
   .mail-user, .language-box, .support-box, footer {
     display: none; }
   .btn-burger {
@@ -1806,7 +1889,9 @@ textarea.form-control {
     padding: 50px 16px 0; }
     .content-wrap__promotional .row {
       overflow-y: auto;
-      max-height: 733px; } }
+      max-height: 733px; }
+  .content {
+    height: calc(100vh - 48px - 58px); } }
 
 @media only screen and (max-width: 400px) {
   .attention-block {
