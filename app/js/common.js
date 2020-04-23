@@ -70,3 +70,11 @@ $('.sorting-mobile__grouping .btn-close').click(function () {
    $('.sorting-mobile__grouping').fadeOut();
    $('.overlay').fadeOut();
 });
+
+$('.main-slider').slick({
+   dots: true,
+   appendDots: '.slider-nav',
+   appendArrows: '.slider-nav',
+   prevArrow: '<button type="button" class="slick-prev"></button>',
+   nextArrow: '<button type="button" class="slick-next"></button>'
+});

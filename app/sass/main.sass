@@ -1122,6 +1122,212 @@ textarea.form-control
   justify-content: space-between
 
 
+//sing-page
+.sing-page
+  .content
+    width: calc(100% - 512px)
+    align-items: center
+    justify-content: center
+    padding: 30px 0
+
+.main-log
+  width: 512px
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: #2F3545
+  padding: 20px
+  .logo
+    margin: 0 0 36px auto
+
+.form-sing
+  max-width: 223px
+  width: 100%
+  flex-direction: column
+  align-items: center
+  margin: 0 auto
+  h3
+    margin: 0 0 21px
+    color: #9B9EA8
+    font-weight: bold
+  label
+    width: 100%
+    margin: 0 0 16px
+    input
+      background: #4e5361
+      color: #FFFFFF
+      height: 40px
+      font-size: 14px
+      &::placeholder
+        color: #FFFFFF
+  button
+    width: 100%
+    margin: 0 auto 20px
+    background: #1AA3E0
+    height: 40px
+    font-size: 16px
+    box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
+    &:hover
+      box-shadow: none
+  .links
+    text-align: center
+    font-size: 12px
+    opacity: 1
+    font-weight: 500
+    &:hover
+      color: #fff
+  .bottom-line
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+  .checkbox
+    margin: 0
+    .label
+      font-size: 12px
+      color: #fff
+      a
+        display: inline
+    .checkbox-custom
+      border: 1px solid #FFFFFF
+        radius: 1px
+      background: transparent
+
+
+.box-or
+  margin: 40px auto 20px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    background: #98A4C4
+    height: 1px
+    top: 50%
+    transform: translate(0,-50%)
+  p
+    text-align: center
+    position: relative
+    width: fit-content
+    color: #8890A7
+    font-weight: 600
+    font-size: 12px
+    padding: 0 5px
+    z-index: 1
+    margin: 0 auto
+    background: #2F3545
+
+.btn-border
+  color: #1AA3E0
+  font-size: 14px
+  font-weight: 600
+  border: 1px solid #1AA3E0
+    radius: 8px
+  height: 40px
+
+.list-soc
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 16px 0 0
+  li
+    margin: 0 0 40px
+    a
+      border-radius: 8px
+      display: flex
+      align-items: center
+      border: 1px solid #FFFFFF
+      width: 104px
+      height: 40px
+      color: #FFFFFF
+      font-size: 10px
+      font-weight: 600
+      padding: 0 9px
+      img
+        width: 16px
+        height: 16px
+        min-width: 16px
+        margin: 0 5px 0 0
+
+.main-slider__image
+  margin: 0 auto 25px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.main-slider__text
+  max-width: 484px
+  margin: 0 auto
+  color: #2F3545
+  font-size: 18px
+  font-weight: 500
+  text-align: center
+
+.main-slider
+  width: 100%
+
+
+.slick-dots
+  position: relative
+  width: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 0
+  margin: 0 24px
+
+  li
+    width: 12px
+    height: 12px
+    border: 1px solid #9B9EA8
+      radius: 50%
+    background: #FFFFFF
+    transition: .3s ease
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  li.slick-active
+    box-shadow: 0px 5px 10px rgba(26, 163, 224, 0.5)
+    background: #1AA3E0
+    border: none
+
+.slider-nav
+  margin: 24px auto 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slick-arrow
+  position: relative
+  transform: none
+  width: 8px
+  height: 13px
+  opacity: 1
+  &:before
+    display: none
+
+
+.slick-next
+  background: url("../img/next.svg") no-repeat center
+    size: contain
+  order: 1
+  right: 0
+  z-index: 1
+  &:hover
+    background: url("../img/next.svg") no-repeat center
+      size: contain
+
+.slick-prev
+  left: 0
+  background: url("../img/prev.svg") no-repeat center
+    size: contain
+  &:hover
+    background: url("../img/prev.svg") no-repeat center
+      size: contain
 
 
 @import "media"
