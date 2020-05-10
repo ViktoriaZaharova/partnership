@@ -169,6 +169,12 @@ h1
   font-weight: bold
   margin: 0 0 25px
 
+h2
+  font-size: 54px
+  text-align: center
+  font-weight: 900
+  width: 100%
+
 input, textarea, .form-control
   outline: none
   box-shadow: none
@@ -648,7 +654,8 @@ textarea.form-control
       width: calc(100% + 50px)
       height: 100%
       background: #232834
-
+  .support-box
+    display: flex
 
 
 .line-title__menu
@@ -1220,6 +1227,7 @@ textarea.form-control
 .box-or
   margin: 40px auto 20px
   position: relative
+  width: 100%
   &:before
     content: ''
     position: absolute
@@ -1399,6 +1407,211 @@ textarea.form-control
       .radio
         width: auto
         margin: 0
+
+
+//main page
+.support-box
+  display: flex
+  align-items: center
+  color: #9B9EA8
+  font-weight: 500
+  .header-item__icon
+    margin: 0 11px 0 0
+    width: 22px
+    height: 22px
+  &:hover
+    color: #fff
+
+.header
+  padding: 57px 0 0
+  .logo-icon
+    background: transparent
+    width: 78px
+    height: 68px
+    padding: 0
+    border-radius: 0
+    margin: 0
+  .text
+    margin: 0 0 0 17px
+    color: #1AA3E0
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 29px
+    width: auto
+    max-width: none
+  .header-item
+    margin: 0 67px 0 0
+
+.footer
+  background: #2F3545
+  .logo-icon
+    background: transparent
+    width: 56px
+    height: 48px
+    padding: 0
+    border-radius: 0
+    margin: 0
+  .text
+    margin: 0 0 0 17px
+    color: #1AA3E0
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 16px
+    width: auto
+    max-width: 118px
+  .dropDown-menu
+    bottom: 100%
+    top: auto
+  .header-item
+    margin: 0 67px 0 0
+
+
+.main-page
+  background: #2F3545
+  padding: 47px 0 132px
+  .content
+    background: transparent
+    width: 100%
+    padding: 0
+  .main-slider__text
+    color: #fff
+  .main-slider
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: -30px
+      background: url("../img/decor.svg") no-repeat center
+        size: cover
+      width: 674px
+      height: 535px
+      transform: translate(-50%,0)
+  h1
+    font-size: 54px
+    font-weight: 900
+    color: #fff
+    position: relative
+    padding: 0 0 26px
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 219px
+      height: 4px
+      background: #1AA3E0
+  .main-log
+    width: 100%
+    padding: 0
+    align-items: flex-start
+    .description
+      color: #fff
+      font-size: 21px
+      font-weight: 500
+      max-width: 185px
+  .form-sing
+    margin: 78px 0 0
+    width: 100%
+    .btn
+      height: 40px
+      width: 100%
+  .box-or
+    margin: 20px 0
+    width: 100%
+
+
+.slick-slide
+  outline: none
+
+.btn-sing
+  margin: 80px auto 100px
+  width: 245px
+  height: 40px
+
+
+.stages-work__box
+  align-items: center
+  margin: 0 0 10px
+
+  h3
+    color: #2F3545
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 32px
+    margin: 0 0 19px
+
+.list-check
+  li
+    position: relative
+    padding: 0 0 0 34px
+    margin: 0 0 14px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 20px
+      height: 20px
+      background: url("../img/check.svg") no-repeat center
+        size: contain
+
+.stages-work__box-img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.advantages
+  padding: 100px 0
+  background: #2f3545
+  color: #fff
+  h2
+    margin: 0 0 80px
+  .btn-sing
+    margin: 0 auto
+
+.advantages-box
+  margin: 0 0 80px
+  color: #E5E5E5
+  font-size: 14px
+  h3
+    font-size: 32px
+    font-weight: bold
+    margin: 0 0 2px
+  &__icon
+    height: 72px
+    margin: 0 0 20px
+    font-size: 57px
+    color: #1AA3E0
+
+.partner
+  padding: 90px 0 120px
+  .btn-sing
+    margin: 45px auto 0
+  .description
+    text-align: center
+    margin: 0 auto
+    color: #2F3545
+    font-size: 32px
+    font-weight: bold
+    max-width: 686px
+    width: 100%
+  h2
+    margin: 0 auto 54px
+    max-width: 510px
+
+.partner-img
+  margin: 0 auto 40px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+
 
 @import "media"
 // Всегда в конце
