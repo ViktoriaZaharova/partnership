@@ -1611,9 +1611,219 @@ textarea.form-control
 .slick-dotted.slick-slider
   margin-bottom: 0
 
+//promotional-tabs
+.content-wrap__tabs
+  padding: 46px 24px 44px 77px
 
+.tabs__content
+  display: none /* по умолчанию прячем все блоки */
+  flex-direction: column
+  align-items: flex-start
+  width: 100%
+  .form-copy-links
+    max-width: 415px
+    width: 100%
+    input
+      color: rgba(#424B62, .75)
+
+.tabs__content.active
+  display: flex /* по умолчанию показываем нужный блок */
+
+.tabs
+  width: 100%
+
+.tabs__caption
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 25px
+  color: #909090
+  font-weight: 500
+  li
+    cursor: pointer
+    margin: 0 50px 20px 0
+    transition: .3s ease
+    border-bottom: 1px solid transparent
+    &:last-child
+      margin: 0 0 20px 0
+    &:hover
+      color: #000
+  .active
+    color: #000000
+    border-bottom-color: #1AA3E0
+
+
+.form-copy-links
+  margin: 0
+  padding: 0
+  width: 100%
+  max-width: none
+  display: flex
+  align-items: center
+  justify-content: space-between
+  label
+    width: calc(100% - 35px)
+  input
+    color: #424B62
+    font-size: 12px
+    font-weight: 500
+    background: rgba(#9B9EA8, .15)
+    border: none
+    height: 32px
+    border-radius: 5px
+    &::placeholder
+      color: #424B62
+  .btn
+    &:hover
+      box-shadow: none
+
+.tabs__content-title
+  font-size: 18px
+  font-weight: 500
+  color: #424B62
+  margin: 0 0 14px
+  width: 100%
+
+.tabs__content-box
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  width: 100%
+  margin: 0 0 34px
+  &:last-child
+    margin: 0
+
+  h6
+    color: #9B9EA8
+    font-size: 12px
+    font-weight: 600
+    margin: 0 0 4px
+
+
+.form-tabs.form
+  padding: 0
+  label
+    color: #9B9EA8
+    margin: 0 0 8px
+    font-size: 12px
+    font-weight: 600
+  input
+    height: 32px
+    border: 1px solid rgba(#424B62, .15)
+    color: #9B9EA8
+    &::placeholder
+      color: #9B9EA8
+  .form-group
+    margin: 0 0 17px
+    &:last-child
+      margin: 0
+  .select
+    width: 100%
+    border: 1px solid rgba(#424B62, .15)
+    background: #fff url("../img/arrow-bottom.svg") no-repeat 96% center
+      size: 14px
+    color: #9B9EA8
+
+.icon-copy
+  width: 24px
+  height: 24px
+
+.promotional-box-pages
+  background: #F5FAFE
+  color: #000000
+  font-size: 14px
+  .form
+    margin: 29px 0 0
+    max-width: 420px
+    width: 100%
+  .promotional-box__content
+    padding: 29px 42px 41px 26px
+  h3
+    margin: 0 0 15px
+    font-size: 18px
+    font-weight: bold
+    color: #424B62
+  .text
+    line-height: 150%
+
+.pagination
+  margin: 20px 0 0 auto
+  li
+    margin: 0 18px 0 0
+    &:last-child
+      margin: 0
+      a
+        background: transparent
+    &:first-child
+      a
+        background: transparent
+  a
+    width: 30px
+    height: 35px
+    border-radius: 4px
+    background: #F5FAFE
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #909090
+    font-size: 18px
+    font-weight: bold
+    &:hover
+      color: #1AA3E0
+  .active
+    color: #1AA3E0
+
+.filter-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 16px 0 34px
+  max-width: none
+
+.filter-box
+  margin: 0 54px 20px 0
+  &:last-child
+    margin-right: 0
+  .select
+    width: 197px
+    height: 40px
+  label
+    margin: 0
+
+.filter-wrapper.form
+  .filter-box
+    .select
+      width: 197px
+      background-position: 95% center
+      color: #000000
+      font-size: 13px
+
+.filter-box__title
+  margin: 0 0 10px
+  color: #9B9EA8
+  font-size: 14px
+  font-weight: 500
+
+.list-language
+  display: flex
+  align-items: center
+  li
+    margin: 5px 5px 0 0
+    &:last-child
+      margin: 5px 0 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 42px
+      height: 32px
+      padding: 0 5px
+      border-bottom: 2px solid transparent
+    .active
+      border-bottom-color: #1AA3E0
 
 @import "vfx"
-
 @import "media"
 // Всегда в конце
