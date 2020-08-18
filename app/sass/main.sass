@@ -899,6 +899,31 @@ textarea.form-control
 
 .promotional-box__banner
   width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+
+.bg-white.promotional-box__banner
+  border: 0.5px solid #9B9EA8
+
+
+
+.bg-grey
+  background: #424B62
+
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
 
 //payout page
 .payouts-wrap
@@ -1859,12 +1884,44 @@ textarea.form-control
     max-width: 150px
     width: 100%
     height: 32px
+  .btn-copy
+    width: 24px
   .btn:not(:last-child):not(.dropdown-toggle)
     border-radius: 8px
     margin: 0
 
 .color-green
   color: #96B48A
+
+.line-title
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 0 0 15px
+  h3
+    width: auto
+    margin: 0
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      margin: 0 15px
+      display: inline-block
+      border: 1px solid #9B9EA8
+      height: 21px
+      width: 1px
+
+.time-video
+  color: #9B9EA8
+  font-size: 18px
+  font-weight: 500
+
+.promotional-box-logos
+  .promotional-box__banner
+    padding: 20px
+    height: 185px
+  .btn
+    max-width: 140px
 
 @import "vfx"
 @import "media"
