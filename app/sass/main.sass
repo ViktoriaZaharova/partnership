@@ -1626,6 +1626,7 @@ textarea.form-control
     input
       color: rgba(#424B62, .75)
 
+
 .tabs__content.active
   display: flex /* по умолчанию показываем нужный блок */
 
@@ -1691,8 +1692,6 @@ textarea.form-control
   flex-direction: column
   width: 100%
   margin: 0 0 34px
-  &:last-child
-    margin: 0
 
   h6
     color: #9B9EA8
@@ -1755,6 +1754,9 @@ textarea.form-control
 
 .pagination
   margin: 20px 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: flex-end
   li
     margin: 0 18px 0 0
     &:last-child
@@ -1829,6 +1831,40 @@ textarea.form-control
       border-bottom: 2px solid transparent
     .active
       border-bottom-color: #1AA3E0
+
+.promotional-box-banners
+  .promotional-box__content
+    padding: 16px 16px 25px
+    .text
+      background: #E8ECF1
+      border-radius: 8px
+      padding: 16px 17px
+      color: #202020
+      font-size: 13px
+      font-weight: bold
+      span
+        display: block
+      p
+        margin: 0 0 20px
+        &:last-child
+          margin: 0
+
+  .btn-group
+    margin: 12px 0 0
+    justify-content: space-between
+  .btn-border
+    border-radius: 8px
+
+  .btn
+    max-width: 150px
+    width: 100%
+    height: 32px
+  .btn:not(:last-child):not(.dropdown-toggle)
+    border-radius: 8px
+    margin: 0
+
+.color-green
+  color: #96B48A
 
 @import "vfx"
 @import "media"
