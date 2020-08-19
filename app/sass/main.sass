@@ -2004,6 +2004,11 @@ textarea.form-control
     margin: 0 0 17px
   .w-100
     max-width: none
+  .select
+    width: 100%
+    border: 1px solid rgba(#424B62, .15)
+    background: transparent url("../img/arrow-bottom.svg") no-repeat 96% center
+      size: 10px
 
 .form-box
   max-width: 358px
@@ -2081,7 +2086,8 @@ textarea.form-control
     &:nth-child(2)
       width: 10%
       input
-        max-width: 50px
+        max-width: 60px
+        width: 100%
     &:nth-child(3), &:nth-child(4)
       width: 15%
       padding-right: 5px
@@ -2102,6 +2108,45 @@ textarea.form-control
     border-bottom: 1px solid rgba(#9B9EA8, .3)
   .button-group-admin
     justify-content: flex-start
+
+
+.btn-delete
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 12px
+  height: 12px
+  svg
+    fill: none
+    width: 100%
+    height: 100%
+
+.list-files
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 10px
+  font-weight: 500
+  color: rgba(#424B62, .7)
+  li
+    border: 0.5px solid rgba(#000000, .2)
+      radius: 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 4px 7px
+    width: 148px
+    margin: 0 0 15px
+
+.table-promotional-two
+  td
+    &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(8)
+      width: 12%
+    &:nth-child(7)
+      width: 15%
+
 
 
 @import "vfx"
