@@ -1642,8 +1642,6 @@ textarea.form-control
 
 .tabs__content
   display: none /* по умолчанию прячем все блоки */
-  flex-direction: column
-  align-items: flex-start
   width: 100%
   .form-copy-links
     max-width: 415px
@@ -1653,7 +1651,7 @@ textarea.form-control
 
 
 .tabs__content.active
-  display: flex /* по умолчанию показываем нужный блок */
+  display: block /* по умолчанию показываем нужный блок */
 
 .tabs
   width: 100%
@@ -1935,6 +1933,175 @@ textarea.form-control
       max-width: 130px
       width: 100%
       height: 32px
+
+.button-group-admin
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  .btn
+    max-width: 104px
+    height: 32px
+    width: 100%
+
+.links-view
+  margin: 0 19px 0 0
+  width: 41px
+  height: 32px
+  border: 1px solid #1AA3E0
+    radius: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 5px
+  .icon
+    width: 100%
+    height: 100%
+  &:last-child
+    margin: 0
+
+
+.bottom-line__admin
+  width: 100%
+  text-align: right
+  margin: 45px 0 20px
+  border-bottom: 1px solid rgba(#9B9EA8, .3)
+
+.links-close
+  color: #1AA3E0
+  font-size: 14px
+  font-weight: bold
+  opacity: .5
+  margin: 0 0 3px
+  &:hover
+    opacity: 1
+    color: #1AA3E0
+
+.form-promotional
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  button
+    width: 100%
+    max-width: 104px
+    height: 32px
+  .form-group__title
+    margin: 0 0 8px
+    color: #2F3545
+    font-size: 12px
+    font-weight: 600
+  label
+    width: 100%
+  input
+    width: 100%
+    height: 32px
+  textarea
+    height: 176px
+    width: 100%
+  .form-group
+    margin: 0 0 17px
+  .w-100
+    max-width: none
+
+.form-box
+  max-width: 358px
+  width: 100%
+  margin: 0 24px 0 0
+  &:last-child
+    margin: 0
+
+.file
+  position: relative
+  width: 100%
+  height: 32px
+  border: 1px solid rgba(#424B62, .15)
+    radius: 4px
+  cursor: pointer
+  display: flex
+  align-items: center
+  padding: 0 7px
+
+.file-text
+  color: #000
+  font-weight: 500
+  font-size: 12px
+
+.input-file
+  display: none
+
+.file-custom
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+  background: rgba(#9B9EA8, .2)
+  border-radius: 4px
+  color: #000000
+  font-size: 12px
+  font-weight: 600
+  width: 82px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.links-view-table
+  width: 32px
+  height: 32px
+  svg
+    width: 100%
+    height: 100%
+
+.table-img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 180px
+
+.table-promotional
+  width: 100%
+  color: #000
+  font-weight: 500
+  font-size: 16px
+  margin: 60px 0
+  th
+    padding: 17px 0
+    vertical-align: middle
+  td
+    vertical-align: middle
+    padding: 22px 0
+    &:first-child
+      padding: 22px 10px
+      width: 5%
+    &:last-child
+      padding: 22px 20px 22px 0
+      width: 15%
+    &:nth-child(2)
+      width: 10%
+      input
+        max-width: 50px
+    &:nth-child(3), &:nth-child(4)
+      width: 15%
+      padding-right: 5px
+    &:nth-child(5)
+      width: 20%
+    &:nth-child(6)
+      width: 20%
+  .checkbox-custom
+    margin: 0
+    width: 21px
+    height: 21px
+    min-width: 21px
+  .input-table
+    input
+      height: 32px
+      background: transparent
+  tr
+    border-bottom: 1px solid rgba(#9B9EA8, .3)
+  .button-group-admin
+    justify-content: flex-start
 
 
 @import "vfx"

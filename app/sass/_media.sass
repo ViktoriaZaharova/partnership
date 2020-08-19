@@ -10,6 +10,11 @@
   .advantages-box__icon
     font-size: 45px
 
+@media only screen and (max-width: 1340px)
+  .form-box
+    max-width: 280px
+
+
 @media only screen and (max-width: 1199px)
   .header-menu li a
     font-size: 14px
@@ -22,6 +27,13 @@
 
   .promotional-box-screenshots .form-copy-links
     width: calc(100% - 140px)
+
+@media only screen and (max-width: 1040px)
+  .table-promotional td:last-child
+    padding-right: 0
+
+  .table-promotional td:nth-child(6)
+    width: 15%
 
 @media only screen and (max-width: 991px)
   .sidebar
@@ -152,7 +164,22 @@
     order: -1
     margin: 20px 0
 
+  .form-box
+    max-width: none
+    margin: 0
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 930px)
+  .table-promotional
+    min-width: 900px
+    margin: 30px 0
+
+  .table-promotional td:nth-child(6), .table-promotional td:nth-child(3), .table-promotional td:nth-child(4), .table-promotional td:nth-child(2)
+    width: auto
+
+  .table-promotional td:last-child, .table-promotional td:nth-child(5)
+    width: auto
+
 @media only screen and (max-width: 767px)
   header
     padding: 9px 0

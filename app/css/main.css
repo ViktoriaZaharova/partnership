@@ -1910,13 +1910,6 @@ textarea.form-control {
 
 .tabs__content {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   width: 100%; }
   .tabs__content .form-copy-links {
     max-width: 415px;
@@ -1925,9 +1918,7 @@ textarea.form-control {
       color: rgba(66, 75, 98, 0.75); }
 
 .tabs__content.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: block; }
 
 .tabs {
   width: 100%; }
@@ -2282,6 +2273,209 @@ textarea.form-control {
     width: 100%;
     height: 32px; }
 
+.button-group-admin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .button-group-admin .btn {
+    max-width: 104px;
+    height: 32px;
+    width: 100%; }
+
+.links-view {
+  margin: 0 19px 0 0;
+  width: 41px;
+  height: 32px;
+  border: 1px solid #1AA3E0;
+    border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px; }
+  .links-view .icon {
+    width: 100%;
+    height: 100%; }
+  .links-view:last-child {
+    margin: 0; }
+
+.bottom-line__admin {
+  width: 100%;
+  text-align: right;
+  margin: 45px 0 20px;
+  border-bottom: 1px solid rgba(155, 158, 168, 0.3); }
+
+.links-close {
+  color: #1AA3E0;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: .5;
+  margin: 0 0 3px; }
+  .links-close:hover {
+    opacity: 1;
+    color: #1AA3E0; }
+
+.form-promotional {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-promotional button {
+    width: 100%;
+    max-width: 104px;
+    height: 32px; }
+  .form-promotional .form-group__title {
+    margin: 0 0 8px;
+    color: #2F3545;
+    font-size: 12px;
+    font-weight: 600; }
+  .form-promotional label {
+    width: 100%; }
+  .form-promotional input {
+    width: 100%;
+    height: 32px; }
+  .form-promotional textarea {
+    height: 176px;
+    width: 100%; }
+  .form-promotional .form-group {
+    margin: 0 0 17px; }
+  .form-promotional .w-100 {
+    max-width: none; }
+
+.form-box {
+  max-width: 358px;
+  width: 100%;
+  margin: 0 24px 0 0; }
+  .form-box:last-child {
+    margin: 0; }
+
+.file {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgba(66, 75, 98, 0.15);
+    border-radius: 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7px; }
+
+.file-text {
+  color: #000;
+  font-weight: 500;
+  font-size: 12px; }
+
+.input-file {
+  display: none; }
+
+.file-custom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(155, 158, 168, 0.2);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  width: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+.links-view-table {
+  width: 32px;
+  height: 32px; }
+  .links-view-table svg {
+    width: 100%;
+    height: 100%; }
+
+.table-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px; }
+
+.table-promotional {
+  width: 100%;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 60px 0; }
+  .table-promotional th {
+    padding: 17px 0;
+    vertical-align: middle; }
+  .table-promotional td {
+    vertical-align: middle;
+    padding: 22px 0; }
+    .table-promotional td:first-child {
+      padding: 22px 10px;
+      width: 5%; }
+    .table-promotional td:last-child {
+      padding: 22px 20px 22px 0;
+      width: 15%; }
+    .table-promotional td:nth-child(2) {
+      width: 10%; }
+      .table-promotional td:nth-child(2) input {
+        max-width: 50px; }
+    .table-promotional td:nth-child(3), .table-promotional td:nth-child(4) {
+      width: 15%;
+      padding-right: 5px; }
+    .table-promotional td:nth-child(5) {
+      width: 20%; }
+    .table-promotional td:nth-child(6) {
+      width: 20%; }
+  .table-promotional .checkbox-custom {
+    margin: 0;
+    width: 21px;
+    height: 21px;
+    min-width: 21px; }
+  .table-promotional .input-table input {
+    height: 32px;
+    background: transparent; }
+  .table-promotional tr {
+    border-bottom: 1px solid rgba(155, 158, 168, 0.3); }
+  .table-promotional .button-group-admin {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
 .body-vfx {
   background: #fafafa;
   color: #424B62; }
@@ -2536,6 +2730,10 @@ textarea.form-control {
   .advantages-box__icon {
     font-size: 45px; } }
 
+@media only screen and (max-width: 1340px) {
+  .form-box {
+    max-width: 280px; } }
+
 @media only screen and (max-width: 1199px) {
   .header-menu li a {
     font-size: 14px; }
@@ -2545,6 +2743,12 @@ textarea.form-control {
     max-width: 100px; }
   .promotional-box-screenshots .form-copy-links {
     width: calc(100% - 140px); } }
+
+@media only screen and (max-width: 1040px) {
+  .table-promotional td:last-child {
+    padding-right: 0; }
+  .table-promotional td:nth-child(6) {
+    width: 15%; } }
 
 @media only screen and (max-width: 991px) {
   .sidebar {
@@ -2652,9 +2856,21 @@ textarea.form-control {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin: 20px 0; } }
+    margin: 20px 0; }
+  .form-box {
+    max-width: none;
+    margin: 0; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 930px) {
+  .table-promotional {
+    min-width: 900px;
+    margin: 30px 0; }
+  .table-promotional td:nth-child(6), .table-promotional td:nth-child(3), .table-promotional td:nth-child(4), .table-promotional td:nth-child(2) {
+    width: auto; }
+  .table-promotional td:last-child, .table-promotional td:nth-child(5) {
+    width: auto; } }
+
 @media only screen and (max-width: 767px) {
   header {
     padding: 9px 0; }
