@@ -2531,11 +2531,40 @@ textarea.form-control {
     width: 148px;
     margin: 0 0 15px; }
 
+.size-files, .name-files {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.val-size {
+  margin: 0 10px 0 0; }
+
 .table-promotional-two td:nth-child(3), .table-promotional-two td:nth-child(4), .table-promotional-two td:nth-child(5), .table-promotional-two td:nth-child(6), .table-promotional-two td:nth-child(8) {
   width: 12%; }
 
 .table-promotional-two td:nth-child(7) {
   width: 15%; }
+
+.list-files__details li {
+  width: 222px;
+  margin: 0 0 20px;
+  border: none;
+    border-radius: 0;
+    border-bottom: 0.5px solid rgba(155, 158, 168, 0.3);
+  padding: 0 0 5px; }
+
+.form-box-auto {
+  max-width: 480px;
+  margin: 0; }
+
+.icon-img {
+  width: 11px;
+  height: 11px;
+  fill: none;
+  margin: 0 4px 0 0; }
 
 .body-vfx {
   background: #fafafa;
