@@ -14,7 +14,6 @@ $('.attention-block .btn-close').click(function (e) {
 });
 
 $('.submenu-title').click(function () {
-    // $('.submenu-item').removeClass('open');
     $(this).toggleClass('open');
     $(this).siblings('.submenu-dropDown').toggleClass('active');
 });
@@ -89,6 +88,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+// service
 $('.service-content').each(function () {
     if ($(this).height() > 2430) {
         $(this).addClass('hidden');
