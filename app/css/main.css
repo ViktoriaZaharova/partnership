@@ -2048,6 +2048,51 @@ textarea.form-control {
     width: 100%;
     margin: 36px 0 0; }
 
+.account-pro-instruction {
+  background: #F5FAFE;
+  padding: 30px 101px 30px 24px;
+  position: relative;
+  margin: 22px 0 0;
+  max-width: 555px;
+  width: 100%; }
+  .account-pro-instruction h3 {
+    margin: 0 0 20px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold; }
+  .account-pro-instruction ul {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%; }
+    .account-pro-instruction ul li {
+      margin: 0 0 20px; }
+      .account-pro-instruction ul li:last-child {
+        margin: 0; }
+  .account-pro-instruction a {
+    color: #1AA3E0;
+    display: inline; }
+
+.close-instruction {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  right: 18px;
+  fill: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .close-instruction .icon-svg {
+    width: 100%;
+    height: 100%; }
+
 .icon-copy {
   width: 24px;
   height: 24px; }
@@ -3021,7 +3066,9 @@ textarea.form-control {
   .promotional-box-logos .btn {
     max-width: 100px; }
   .promotional-box-screenshots .form-copy-links {
-    width: calc(100% - 140px); } }
+    width: calc(100% - 140px); }
+  .account-pro-instruction {
+    padding: 30px 40px 30px 24px; } }
 
 @media only screen and (max-width: 1040px) {
   .table-promotional td:last-child {
