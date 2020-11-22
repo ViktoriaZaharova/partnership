@@ -328,7 +328,18 @@ footer {
   background: #424B62;
   padding: 16px 0;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 12px; }
+  font-size: 12px;
+  position: relative; }
+  footer .logo {
+    max-width: 104px;
+    width: 100%; }
+
+.footer-box-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
 
 .document {
   max-width: 320px;
@@ -1461,6 +1472,10 @@ textarea.form-control {
       border: 1px solid #FFFFFF;
         border-radius: 1px;
       background: transparent; }
+  .form-sing .logo {
+    max-width: 121px;
+    width: 100%;
+    margin: 0 0 36px; }
 
 .box-or {
   margin: 40px auto 20px;
@@ -1544,7 +1559,7 @@ textarea.form-control {
           justify-content: center; }
 
 .main-slider__text {
-  max-width: 484px;
+  max-width: 380px;
   margin: 0 auto;
   color: #2F3545;
   font-size: 18px;
@@ -3701,7 +3716,13 @@ textarea.form-control {
   .service-content {
     font-size: 14px; }
   .service-content ul h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .footer-box-right {
+    position: relative;
+    right: 0;
+    -webkit-transform: none;
+            transform: none;
+    top: 0; } }
 
 @media only screen and (max-width: 440px) {
   .promotional-box-banners .btn {
