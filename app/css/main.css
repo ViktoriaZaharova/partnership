@@ -1778,10 +1778,10 @@ textarea.form-control {
       content: '';
       position: absolute;
       left: 50%;
-      bottom: -30px;
+      bottom: -70px;
       background: url("../img/decor.svg") no-repeat center;
         background-size: cover;
-      width: 674px;
+      width: 620px;
       height: 535px;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0); }
